@@ -1,0 +1,20 @@
+package web.dao;
+
+import web.model.User;
+
+import java.util.List;
+
+public interface UserDao {
+
+    List<User> getAllUsers();
+
+    void saveUser(User user);
+
+    User getUser(int id);
+
+    void deleteUser(int id);
+
+    User getUserById(int id);
+
+    void update(int id, User user);
+}
